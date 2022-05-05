@@ -45,7 +45,7 @@ a {
   display: flex;
 }
 
-.card-image__position, .social__icon, .card-nav__icon {
+.hero-list__icon, .card-image__position, .social__icon, .card-nav__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +57,7 @@ a {
           align-items: center;
 }
 
-.social, .page-portfolio__list {
+.hero-list__name, .social, .page-portfolio__list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -119,11 +119,11 @@ a {
 }
 
 .selection-two {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .hero-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,11 +133,26 @@ a {
   }
 }
 
-.hero-list__item {
-  width: 270px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-list__text {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .selection-two {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .hero-list__text {
+    width: 270px;
+  }
 }
 
 .hero-list__name {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -156,6 +171,7 @@ a {
 
 .hero-list__icon {
   height: 120px;
+  margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--background-color-next);
 }
