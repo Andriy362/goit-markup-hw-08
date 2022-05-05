@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------SELECTION-THREE---------------------------- */
+
+
+
+
+.selection-three {
+
+    padding-bottom: 94px;
+}
+
+.selection-three__name {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-title-color);
+}
+
+.card-image {
+ @extend %position;
+}
+
+
+.card-image__item:not(:last-child) {
+
+    margin-right: 30px;
+}
+
+.card-image__meta {
+    position: relative;
+}
+
+.card-image__position {
+    @extend %flex;
+
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    position: absolute;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+
+.card-image__text {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-btn-color);
+}

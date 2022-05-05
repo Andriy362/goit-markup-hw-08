@@ -1,0 +1,28 @@
+.page-header__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--first-btn-color)
+}
+
+.page-header__logo--another {
+    transition: color 250ms var(--timing-function);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+
+    &:hover,
+    &:focus {
+        transition: color 250ms var(--timing-function);
+        color: var(--first-btn-color);
+    }
+}
+
+

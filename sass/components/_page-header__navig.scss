@@ -1,0 +1,35 @@
+.page-header__navigation {
+    margin-left: auto;
+}
+
+.page-header__contacts {
+    display: flex;
+    align-items: center;
+
+}
+
+.page-header__tel,
+.page-header__mailto {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    transition: color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        transition: color 250ms var(--timing-function);
+        color: var(--first-btn-color);
+    }
+    &.page-header__mailto {
+        margin-right: 30px;
+    }
+}
+
+.page-header__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
