@@ -1,3 +1,51 @@
+// /* -----------------------SELECTION---------------FIFE------------- */
+
+
+// .section-fife {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .card-nav {
+//    @extend %position;
+
+// }
+
+// .card-nav__item+.card-nav__item {
+//     margin-left: 30px;
+// }
+
+
+// .card-nav__icon {
+//     @extend %flex;
+    
+//     transition: color 250ms var(--timing-function),
+//         border-color 250ms var(--timing-function);
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid #AFB1B8;
+//     border-radius: 4px;
+   
+//     cursor: pointer;
+   
+//     color: #afb1b8;
+
+//     &:hover,
+//     &:focus {
+//     transition: color 250ms var(--timing-function),
+//     border-color 250ms var(--timing-function);
+//     color: var(--first-btn-color);
+//     border-color: var(--first-btn-color);
+    
+//     }
+
+
+// }
+
+// .card-nav__svg {
+//     fill: currentColor;
+// }
+
 /* -----------------------SELECTION---------------FIFE------------- */
 
 
@@ -6,37 +54,37 @@
     padding-bottom: 94px;
 }
 
-.card-nav {
-   @extend %position;
+// .card-nav {
+//     @extend %position;
 
-}
+// }
 
-.card-nav__item+.card-nav__item {
-    margin-left: 30px;
-}
+// .card-nav__item+.card-nav__item {
+//     margin-left: 30px;
+// }
 
 
 .card-nav__icon {
     @extend %flex;
-    
+
     transition: color 250ms var(--timing-function),
         border-color 250ms var(--timing-function);
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-   
+
     cursor: pointer;
-   
+
     color: #afb1b8;
 
     &:hover,
     &:focus {
-    transition: color 250ms var(--timing-function),
-    border-color 250ms var(--timing-function);
-    color: var(--first-btn-color);
-    border-color: var(--first-btn-color);
-    
+        transition: color 250ms var(--timing-function),
+            border-color 250ms var(--timing-function);
+        color: var(--first-btn-color);
+        border-color: var(--first-btn-color);
+
     }
 
 
