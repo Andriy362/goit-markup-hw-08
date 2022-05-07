@@ -94,7 +94,10 @@
 // }
 
 
-
+.hero-list{
+    display: flex;
+        flex-wrap: wrap;
+}
 
 
 .selection-two {
@@ -104,25 +107,47 @@
 }
 
 
-.hero-list {
-    @media screen and (min-width: 767px) {
-        display: flex;
-        flex-wrap: wrap;
-       
-    }
-    
+// .hero-list {
+   
+//     @media screen and (min-width: 767px) {
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+// }
 
+
+
+// ДЛя Телефона
+@media screen and (max-width: 767px) {
+    .hero-list__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
+
+
+            // ДЛя планшета
 @media screen and (min-width: 768px) and (max-width:1199px){
-   
 
     .hero-list__text {
         width: 354px;
     }
-    
+    .hero-list__item {
+        margin-right: 30px;
+        margin-bottom: 30px;
+        
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        
+        &:not(:nth-child(-n + 2)) {
+            margin-bottom: 0px;
+        }
+    }
 }
 
+        
+// Для пк
 @media screen and (min-width: 1200px)  {
     .selection-two {
         padding-top: 94px;
@@ -132,15 +157,14 @@
 
     .hero-list__text {
         width: 270px;
-
+    }
+    .hero-list__item:not(:last-child) {
+        margin-right: 30px;
     }
 }
 
 
-// &:not(:last-child) {
-//     margin-right: 30px;
 
-// }
 
 
 

@@ -60,12 +60,14 @@
 
 /* ------------------------------------------------------------SELECTION-THREE---------------------------- */
 
-
-
-
 .selection-three {
+    @media (max-width: 1199px){
+        display: none;
+    }
+}
+.selection-three {
+padding-bottom: 94px;
 
-    padding-bottom: 94px;
 }
 
 .selection-three__name {
@@ -74,14 +76,14 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    // text-align: center;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--first-title-color);
 }
 
-// .card-image {
-//     @extend %position;
-// }
+.card-image {
+    @extend %position;
+}
 
 
 .card-image__item:not(:last-child) {

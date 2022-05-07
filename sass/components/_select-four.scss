@@ -105,49 +105,25 @@
 
 /* ------------------------------------------SELECTION-FOUR--------------------------------------- */
 .selection-four {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-color-next);
 }
 
 .selection-four__name {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    // text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--first-title-color);
-}
-
-// .card-list {
-//     @extend %position;
-// }
-
-
-.card-list__item {
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    height: 428px;
-    background-color: var(--second-btn-color);
-
-    &:not(:last-child) {
-        margin-right: 30px;
-
-    }
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--first-title-color);
 }
 
 .card-list__position {
-
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
-
 
 .card-list__name {
     margin-top: 0px;
@@ -207,4 +183,100 @@
 
 .social__svg {
     fill: currentColor;
+}
+
+
+.card-list__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    // width: 270px;
+    // height: 622px;
+    background-color: var(--second-btn-color);
+    // width: 100%;
+
+
+}
+
+
+
+ 
+    @media screen and (min-width: 768px)   
+ {
+    .card-list {
+        display: flex;
+            flex-wrap: wrap;
+    }
+       
+    }
+
+// ДЛя Телефона
+@media screen and (max-width: 767px) {
+    // .card-list{
+    //     width: 450px;
+    // }
+    .card-list__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+       
+}
+
+
+// ДЛя планшета
+@media screen and (min-width: 768px) and (max-width:1199px) {
+
+    img {
+        width: 354px;
+    }
+    .card-list__item {
+        width: 354px;
+    
+        margin-right: 30px;
+        margin-bottom: 30px;
+    
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+        &:not(:nth-child(-n + 2)) {
+            margin-bottom: 0px;
+        }
+    }
+    .selection-four__name {
+        display: flex;
+        justify-content: center;
+       
+    }
+}
+
+
+// Для пк
+@media screen and (min-width: 1200px) {
+    // img {
+    //         width: 270px;
+    //     }
+    
+    .card-list__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    .selection-four__name {
+        margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+            color: var(--first-title-color);
+    text-align: center;
+    }
+    .selection-four {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        background-color: var(--background-color-next);
+    }
+        // .card-list__item {
+        //     width: 270px;
+        // }
+    
+            
+            
 }
