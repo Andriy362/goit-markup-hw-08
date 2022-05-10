@@ -1,11 +1,14 @@
 .page-footer__logo {
+    
+    
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    margin-right: 93px;
+  
     font-size: 26px;
     line-height: 1.19;
     color: var(--first-btn-color)
+    
 }
 
 .page-footer__logo--another {
@@ -25,3 +28,25 @@
     }
 
 }
+
+
+ 
+    .page-footer__logo {
+        // ДЛя Телефона
+            @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        
+    }
+        // ДЛя планшета
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+            
+        }
+    
+
+        // Для пк
+        @media screen and (min-width: 1200px) {}
+ }
+
+ 
+ 

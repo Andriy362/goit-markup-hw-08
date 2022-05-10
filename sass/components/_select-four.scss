@@ -191,31 +191,26 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    // width: 270px;
-    // height: 622px;
     background-color: var(--second-btn-color);
-    // width: 100%;
-
 
 }
 
 
-
- 
-    @media screen and (min-width: 768px)   
- {
-    .card-list {
-        display: flex;
+.card-list {
+    @media screen and (min-width: 768px) {
+            display: flex;
             flex-wrap: wrap;
-    }
+        }
+
+}
+ 
+  
        
-    }
+    
 
 // ДЛя Телефона
 @media screen and (max-width: 767px) {
-    // .card-list{
-    //     width: 450px;
-    // }
+   
     .card-list__item:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -226,9 +221,6 @@
 // ДЛя планшета
 @media screen and (min-width: 768px) and (max-width:1199px) {
 
-    img {
-        width: 354px;
-    }
     .card-list__item {
         width: 354px;
     
@@ -252,10 +244,7 @@
 
 // Для пк
 @media screen and (min-width: 1200px) {
-    // img {
-    //         width: 270px;
-    //     }
-    
+   
     .card-list__item:not(:last-child) {
         margin-right: 30px;
     }
@@ -273,10 +262,12 @@
         padding-bottom: 94px;
         background-color: var(--background-color-next);
     }
-        // .card-list__item {
-        //     width: 270px;
-        // }
-    
-            
             
 }
+
+    .img_classs {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+ 

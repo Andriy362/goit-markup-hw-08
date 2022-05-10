@@ -53,3 +53,117 @@
 //     color: var(--second-btn-color);
 //     fill: currentColor;
 // }
+
+
+
+
+.footer-icon {
+    @extend %flex-two;
+   
+    height: 80px;
+
+    flex-direction: column;
+
+}
+
+
+
+.footer-icon {
+    // Для пк
+        @media screen and (min-width: 1200px) {
+            margin-left: 60px;
+        }
+    
+        // ДЛя планшета
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+           
+
+        }
+    
+    
+        // ДЛя Телефона
+        @media screen and (max-width: 767px) {}
+  
+
+}
+
+
+
+.footer-icon__text {
+
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-btn-color);
+
+    // ДЛя Телефона
+        @media screen and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+        }
+
+    // ДЛя планшета
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        
+     
+    }
+
+}
+
+
+.footer-social {
+   
+// ДЛя Телефона
+    @media screen and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    // ДЛя планшета
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        display: flex;
+    }
+
+
+    // Для пк
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.footer-social__item+.footer-social__item {
+    margin-left: 10px;
+}
+
+.footer-social__icon {
+    @extend %flex;
+    background-color: var(--first-btn-color);
+    transition: color 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: #afb1b8;
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        transition: color 250ms var(--timing-function),
+            background-color 250ms var(--timing-function);
+        background-color: var(--first-btn-color);
+        color: var(--second-btn-color);
+
+    }
+}
+
+.footer-social__svg {
+    color: var(--second-btn-color);
+    fill: currentColor;
+}
