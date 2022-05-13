@@ -225,7 +225,6 @@ body.menu-open {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 96%;
     margin-bottom: 64px;
   }
 }
