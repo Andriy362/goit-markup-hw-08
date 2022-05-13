@@ -104,10 +104,7 @@
 
 
 .card-nav__item {
-    
-
-    
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 767px) {
         
             width: calc(100% - 3 * 30px) / 3;
             margin-right: 30px;
