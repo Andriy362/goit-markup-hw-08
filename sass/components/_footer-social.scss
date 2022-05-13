@@ -57,14 +57,14 @@
 
 
 
-.footer-icon {
-    @extend %flex-two;
+// .footer-icon {
+//     @extend %flex-two;
    
-    height: 80px;
+//     height: 80px;
 
-    flex-direction: column;
+//     flex-direction: column;
 
-}
+// }
 
 
 
@@ -76,7 +76,10 @@
     
         // ДЛя планшета
         @media screen and (min-width: 768px) and (max-width:1199px) {
-           
+           display: flex;
+                height: 80px;
+                flex-direction: column;
+        align-items: center;
 
         }
     
@@ -109,6 +112,7 @@
     // ДЛя планшета
     @media screen and (min-width: 768px) and (max-width:1199px) {
         
+      
      
     }
 

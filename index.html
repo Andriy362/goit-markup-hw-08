@@ -14,22 +14,37 @@
 
 </head>
 
-<body>
+<body >
 
     <!-- header -->
 
-<header>
-      <div class=" page-header container">   
-        <a href="./index.html" class=" page-header__logo"> Web<span class="page-header__logo--another">Studio</span></a>
-        <ul class="page-header__list list">
-            <li class="page-header__item"> <a class="page-header__link--another" href="./index.html">Студия</a></li>
+<header class="page-header__positon">
+
+<div class=" page-header container">
+        <a href="./index.html" class=" page-header__logo">Web<span class="page-header__logo--another">Studio</span></a>
+          <button 
+          type="button" 
+          class="page-header__button "
+          aria-controls="menu-container" 
+          data-menu-button>
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                  <use class="icon-cross" href="./image/symbol-defs.svg#icon-close_24px"></use>
+                <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu_24px"></use>
+              </svg>
+          </button>
+         
+        
+
+        <div class="menu-container" id="menu-container" data-menu>
+      
+      
+        <div class="page-header__navigation">
+              <ul class="page-header__list list">
+            <li class="page-header__item"> <a class="page-header__link" href="./index.html">Студия</a></li>
             <li class="page-header__item"> <a class="page-header__link" href="./portfolio.html">Портфолио</a></li>
             <li class="page-header__item"> <a class="page-header__link" href="./index.html">Контакты</a></li>
         </ul>
 
-      
-        <div class="page-header__navigation">
-            
             <ul class="page-header__contacts list">
             <li>
                
@@ -56,13 +71,19 @@
                 </a>
             </li>
         </ul>
-    </div>
+        <ul class="page-header__social list">
+            <li class="page-header__itemsd"><a href="" class="page-header__items">Instagram</a> </li>
+            <li class="page-header__itemsd"><a href="" class="page-header__items">Twitter</a></li>
+            <li class="page-header__itemsd"><a href="" class="page-header__items">Facebook</a></li>
+            <li class="page-header__itemsd"><a href="" class="page-header__items">Linkedin</a></li>
         
+        </ul>
+
+    </div>
     
         </div>
-    </header>
-
-
+</div>
+    </heade>
 
 
 
@@ -541,7 +562,8 @@
     <footer  class="page-footer">
         <div class="page-footer__position container">
             <div class="page-footer__second">
-                <div class="page-footer__two">
+                <div class="qwe">
+                    <div class="page-footer__two">
                     <a href="./index.html" class="page-footer__logo">Web<span class="page-footer__logo--another">Studio</span></a>
                 
                     <address>
@@ -597,6 +619,9 @@
                     </ul>
                 
                 </div>
+
+                </div>
+                
                 
                 
                 <form>
@@ -734,6 +759,7 @@
 
 
    <script src="./modal.js"></script>
+   <script src="./mobile-menu.js"></script>
 </body>
 
 </html>

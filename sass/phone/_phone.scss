@@ -1,0 +1,68 @@
+// .menu-container.is-open{
+//     display: flex;
+//     flex-direction: column;
+// }
+.page-header__items {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+
+// ДЛя Телефона
+@media screen and (max-width: 767px) {
+    .page-header__link{
+       
+         font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        color: var(--first-title-color);
+        &:hover,
+        &:focus {
+                color: var(--first-btn-color);
+            }
+    }
+.page-header__tel {
+ font-weight: 500;
+ font-size: 34px;
+ line-height: 40px;
+ letter-spacing: 0.02em;
+ color: #2196F3;        
+        
+        } 
+                .page-header__mailto{
+                    font-weight: 500;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: 0.02em;
+                        color: #757575;
+                        transition: color 250ms var(--timing-function);
+                    
+                        &:hover,
+                        &:focus {
+                            transition: color 250ms var(--timing-function);
+                            color: var(--first-btn-color);
+                        }
+
+                }
+                
+}
+
+.page-header__items{
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+.page-header__item{
+
+ margin-top: 32px;
+
+
+        &:first-child{
+    margin-top: 0px;}
+
+}

@@ -72,39 +72,30 @@
     background-color: var(--background-color)
 }
 
-.page-footer__position {
-    // Для пк
-        @media screen and (min-width: 1200px) {
-                display: flex;
-                
-        }
+// .page-footer__position {
+//     // Для пк
+//         @media screen and (min-width: 1200px) {
+   
+//         }
     
     
-        // ДЛя планшета
-        @media screen and (min-width: 768px) and (max-width:1199px) {
+//         // ДЛя планшета
+//         @media screen and (min-width: 768px) and (max-width:1199px) {
             
          
-        }
+//         }
     
     
-        // ДЛя Телефона
-        @media screen and (max-width: 767px) {
+//         // ДЛя Телефона
+//         @media screen and (max-width: 767px) {
             
-        }
+//         }
 
 
-}
+// }
 
 
-.page-footer__two {
-    // ДЛя планшета
-        @media screen and (min-width: 768px) and (max-width:1199px) {
-            // display: flex;
-            // align-items: baseline;
-            // justify-content: space-evenly;
-        }
-        
-}
+
 .page-footer__item {
     // ДЛя Телефона
     @media screen and (max-width: 767px) {
@@ -131,7 +122,13 @@
         
                 // ДЛя планшета
                 @media screen and (min-width: 768px) and (max-width:1199px) {
-               
+        
+                    margin-top: 20px;
+                        margin-bottom: 8px;
+                    
+                        &:nth-last-child(2) {
+                            margin-top: 0px;
+                        }
                 }
    
 }
@@ -148,32 +145,45 @@
 
   // Для пк
   @media screen and (min-width: 1200px) {
-           
-      display: flex;
-      align-items: baseline;
+     
   }
 
 
   // ДЛя планшета
   @media screen and (min-width: 768px) and (max-width:1199px) {
+    // text-align: center;
 
-    
+
   }
+}
+.qwe {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+    }
+        // Для пк
+        @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+    
 }
    
 
-.page-footer__second{
+
      // ДЛя планшета
   @media screen and (min-width: 768px) and (max-width:1199px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-left: 61px;
-      margin-right: 74px;
-
+      .page-footer__second {
+          display: flex;
+          flex-direction: column;
+        .page-footer__two {
+                text-align: center;
+            }
+      }
+   
   }
 
-}
+
 .page-footer__name {
   
     font-style: normal;
@@ -213,17 +223,12 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+// Для пк
+@media screen and (min-width: 1200px) {
+    .page-footer__second{
+        display: flex;
+    }
+}
 
 
 
