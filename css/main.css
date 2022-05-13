@@ -200,6 +200,14 @@ body.menu-open {
   }
 }
 
+.page-header {
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+}
+
 /* ---------------------------------------------SELECTION-ONE----------------------- */
 .selection-one {
   margin-left: auto;
