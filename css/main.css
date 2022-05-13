@@ -553,6 +553,7 @@ body.menu-open {
 }
 
 .card-nav__icon {
+  width: 100%;
   -webkit-transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
   height: 92px;
@@ -600,12 +601,6 @@ body.menu-open {
   }
   .card-nav__item:last-child {
     margin-right: 0px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .card-nav__icon {
-    width: 210px;
   }
 }
 
