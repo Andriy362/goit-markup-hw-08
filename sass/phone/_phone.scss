@@ -25,6 +25,9 @@
                 color: var(--first-btn-color);
             }
     }
+    .page-header__position--tel{
+        margin-bottom: 32px;
+    }
 .page-header__tel {
  font-weight: 500;
  font-size: 34px;
@@ -65,4 +68,19 @@
         &:first-child{
     margin-top: 0px;}
 
+}
+.page-header__itemsd{
+border-left: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+    margin-left: 10px;
+    &:first-child {
+        border: none;
+        padding-left: 0px;
+            margin-left: 0px;
+    }
+
+}
+.page-header__social {
+    display: flex;
+    
 }

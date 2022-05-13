@@ -39,3 +39,18 @@
 //     }
 // }
 
+
+.page-header__contacts{
+// // ДЛя Телефона
+@media screen and (max-width: 767px) {
+    
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+         
+            margin-bottom: 64px;
+        
+}
+}
+
+
