@@ -549,6 +549,7 @@ body.menu-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: -15px;
 }
 
 .card-nav__icon {
@@ -572,17 +573,10 @@ body.menu-open {
   fill: currentColor;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .card-nav__item {
-    width: calc(100% - 3 * 30px)/3;
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-  .card-nav__item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .card-nav__item:not(:nth-child(-n + 4)) {
-    margin-bottom: 0px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 

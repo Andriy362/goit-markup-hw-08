@@ -65,6 +65,7 @@
 .card-nav {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
 }
 
 
@@ -104,18 +105,20 @@
 
 
 .card-nav__item {
-    @media screen and (min-width: 767px) {
+    @media screen and (max-width: 767px) {
+            width: calc((100% - 2 * 30px) / 2);
+                margin: 15px;
         
-            width: calc(100% - 3 * 30px) / 3;
-            margin-right: 30px;
+        //     width: calc(100% - 3 * 30px) / 3;
+        //     margin-right: 30px;
 
-            margin-bottom: 30px;
-            &:nth-child(2n){
-                margin-right: 0;
-            }
-            &:not(:nth-child(-n + 4)) {
-            margin-bottom: 0px;
-        }
+        //     margin-bottom: 30px;
+        //     &:nth-child(2n){
+        //         margin-right: 0;
+        //     }
+        //     &:not(:nth-child(-n + 4)) {
+        //     margin-bottom: 0px;
+        // }
 
         }
 
