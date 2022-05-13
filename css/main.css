@@ -132,7 +132,6 @@ body.menu-open {
 
 .page-header__button {
   z-index: 99;
-  left: 37%;
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -201,11 +200,17 @@ body.menu-open {
 }
 
 .page-header {
-  padding-bottom: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* ---------------------------------------------SELECTION-ONE----------------------- */
