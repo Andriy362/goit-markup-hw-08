@@ -83,14 +83,19 @@ body.modal-open {
 
 .page-header__button {
        & {
-           z-index: 99;
+           z-index: 20;
           
            position: relative;
-                display: inline-flex;
-                margin: 0;
-                padding: 0;
+                
+                
                 border: none;
                 background-color: transparent;
+                cursor: pointer;
+
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                margin: 0;
         
             }
         
@@ -120,7 +125,8 @@ body.modal-open {
                 // // ДЛя телефона
                 @media screen and (max-width: 767px) {
                     padding: 48px 40px;
-
+// display: flex;
+//     flex-direction: column;
                     display: none;
                     position: absolute;
                         top: 0;
@@ -152,6 +158,7 @@ body.modal-open {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: auto;
     }
 }
 
@@ -163,3 +170,7 @@ body.modal-open {
             padding-top: 16px;
            padding-bottom: 16px;
         }
+
+.menu-container.is-open {
+                display: flex;
+                flex-direction: column;}

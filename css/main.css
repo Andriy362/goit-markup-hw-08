@@ -131,15 +131,15 @@ body.menu-open {
 }
 
 .page-header__button {
-  z-index: 99;
+  z-index: 20;
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 .page-header__button .icon-cross {
@@ -196,6 +196,7 @@ body.menu-open {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-bottom: auto;
   }
 }
 
@@ -211,6 +212,16 @@ body.menu-open {
           align-items: center;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.menu-container.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 767px) {
