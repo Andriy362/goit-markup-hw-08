@@ -1,7 +1,10 @@
 .page-header__navigation {
     margin-left: auto;
-}
 
+    @media (max-width: 767px) {
+        display: none;
+    }
+}   
 
 
 .page-header__tel,
@@ -20,40 +23,39 @@
         color: var(--first-btn-color);
     }
         @media screen and (min-width: 1200px) {
-&.page-header__mailto {
+    &.page-header__mailto {
         margin-right: 30px;
     }
         }
    
 }
-.page-header__icon {
-    margin-right: 10px;
-    fill: currentColor;
-}
 
-.page-header__navigation {
-    @media (max-width: 767px) {
-        display: none;
-    }
-}
-
-
-.page-header__contacts{
+.page-header__contacts {
 // // ДЛя Телефона
 @media screen and (max-width: 767px) {
             display: flex;
             flex-direction: column-reverse;
             align-items: flex-start;
-            margin-bottom: 64px;
-}
-}
- 
-                 .page-header__icon {
-             @media (max-width: 768px) {
-                 display: none;
-             }
-         }
+            margin-bottom: 64px;}
+            
+ // // Для пк
+ @media screen and (min-width: 1200px) {
 
+     display: flex;
+     align-items: center;
+
+}
+}
+              
+                  
+.page-header__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    @media (max-width: 768px) {
+            display: none;
+        }
+
+}
 
 
 // // ДЛя планшета
@@ -61,16 +63,19 @@
     .menu-container {
         display: flex;
     }
+    .page-header__pozition{
+    margin-bottom: 10px;
+  
+}
 }
 
+.page-header__tel,
+.page-header__mailto{
+    @media screen and (min-width: 768px) and (max-width:1199px){
+        font-size: 12px;
+            line-height: 14px;
+    }
 
-// // Для пк
-@media screen and (min-width: 1200px) {
-    .page-header__contacts {
-            display: flex;
-            align-items: center;
-    
-        }
 }
 
 

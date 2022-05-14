@@ -58,8 +58,12 @@ transition: transform 250ms var(--timing-function);
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-     
 
+}
+@media screen and (min-width: 768px) {
+    .overlay {
+        padding: 0px;
+    }
 }
 
 .overlay.is-hidden {
@@ -262,7 +266,7 @@ textarea {
 
 
 // ДЛя Телефона
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .checkbox__text {
            
             font-size: 12px;
@@ -283,7 +287,10 @@ textarea {
 @media screen and (min-width: 480px)  {
     .modal-window {
         width: 450px;
-    
     }
    
+}
+@media screen and (min-width: 1200px) {
+    .modal-window{
+    width: 528px;}
 }
