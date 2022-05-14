@@ -120,9 +120,10 @@
 
 
 .page-header__positon{
+    @media screen and (min-width: 768px){
             border-bottom-width: 1px;
             border-bottom-style: solid;
-            border-bottom-color: #ECECEC;
+            border-bottom-color: #ECECEC;}
 
     position: relative;
 }
@@ -131,16 +132,24 @@
      overflow: hidden;
     }
  
+.page-header__button:hover,
+.page-header__button:focus{
+        fill: var(--first-btn-color);
+    
 
+}
 
 .page-header__button {
-    &:hover,
-    &:focus{
-        color: var(--first-btn-color);
-    }
+
+    // &:hover,
+    // &:focus{
+    //     color: var(--first-btn-color);
+    // }
+
        & {
            z-index: 20;
-        right: -158px;
+        
+        
            position: relative;
                 
                 border: none;
@@ -151,6 +160,7 @@
                 height: 40px;
                 padding: 0;
                 margin: 0;
+                color: black;
         
             }
         
@@ -165,7 +175,9 @@
             &.is-open .icon-menu {
                 display: none;
             }
-
+&{
+    margin-left: auto;
+}
                                 
 
          // // ДЛя планшета
@@ -197,6 +209,7 @@
                                 0px 2px 4px rgba(0, 0, 0, 0.08),
                                 0px 1px 3px rgba(0, 0, 0, 0.16);
                                 &.is-open {
+                                    
                                         display: block;
                                     }
                 }
@@ -204,6 +217,7 @@
                                             position: fixed;
                                                                               
                                         }
+                                                                               
     // // ДЛя планшета
         @media screen and (min-width: 768px)  {
             display: flex;
@@ -266,12 +280,15 @@
 
       
         
-
+@media screen and (max-width: 767px){
 .menu-container.is-open {
                 display: flex;
                 flex-direction: column;
-            }
+                 max-width: 767.9px;;
+            }}
 
+
+            
                 // // ДЛя Телефона
 @media screen and (max-width: 767px) {
     .page-header {

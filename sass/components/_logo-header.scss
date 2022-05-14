@@ -2,7 +2,7 @@
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    margin-right: 93px;
+   
     font-size: 26px;
     line-height: 1.19;
     color: var(--first-btn-color)
@@ -15,6 +15,15 @@
     }
 
      }
+
+@media screen and (min-width:1199px) {
+    .page-header__logo {
+        margin-right: 93px;
+    }
+
+}
+
+         
 
 .page-header__logo--another {
     transition: color 250ms var(--timing-function);
