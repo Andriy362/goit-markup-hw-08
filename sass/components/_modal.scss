@@ -201,7 +201,7 @@ textarea {
 .checkbox__svg {
     transition: background-color 250ms var(--timing-function);
     cursor: pointer;
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     border: 2px solid var(--first-title-color);
     border-radius: 2px;
