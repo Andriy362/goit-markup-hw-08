@@ -21,10 +21,13 @@
 
 }
 
+
+
+
 .modal-window {
     
     
-    position: absolute;
+    position: relative;
     transform: translate(-50%, -50%) scale(1);
     top: 50%;
     left: 50%;
@@ -46,6 +49,8 @@ transition: transform 250ms var(--timing-function);
 }
 
 .overlay {
+        overflow-y: scroll;
+    z-index: 21;
     padding: 93px 15px;
     position: fixed;
     top: 0;
@@ -182,6 +187,7 @@ textarea {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .checkbox__input {
@@ -222,7 +228,7 @@ textarea {
 }
 
 .checkbox__btn {
-    transform: translateX(61%);
+   
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -236,7 +242,7 @@ textarea {
     border-radius: 4px;
     background: var(--first-btn-color);
     color: var(--second-btn-color);
-    margin-top: 30px;
+   
 
     &:hover {
         background: #188CE8;
@@ -261,12 +267,15 @@ textarea {
            
             font-size: 12px;
             line-height: 14px;
-         
-    
         }
+    
 }
  
-
+.checkbox--pozition {
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+}
         
 
 
