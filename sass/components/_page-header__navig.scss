@@ -1,64 +1,76 @@
-// .page-header__navigation {
-//     margin-left: auto;
-// }
+.page-header__navigation {
+    margin-left: auto;
+}
 
-// .page-header__contacts {
-//     display: flex;
-//     align-items: center;
 
-// }
 
-// .page-header__tel,
-// .page-header__mailto {
+.page-header__tel,
+.page-header__mailto {
 
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--second-title-color);
-//     transition: color 250ms var(--timing-function);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    transition: color 250ms var(--timing-function);
 
-//     &:hover,
-//     &:focus {
-//         transition: color 250ms var(--timing-function);
-//         color: var(--first-btn-color);
-//     }
-//     &.page-header__mailto {
-//         margin-right: 30px;
-//     }
-// }
+    &:hover,
+    &:focus {
+        transition: color 250ms var(--timing-function);
+        color: var(--first-btn-color);
+    }
+        @media screen and (min-width: 1200px) {
+&.page-header__mailto {
+        margin-right: 30px;
+    }
+        }
+   
+}
+.page-header__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
 
-// .page-header__icon {
-//     margin-right: 10px;
-//     fill: currentColor;
-// }
-
-// .page-header__navigation {
-//     @media (max-width: 767px) {
-//         display: none;
-//     }
-// }
+.page-header__navigation {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
 
 
 .page-header__contacts{
 // // ДЛя Телефона
 @media screen and (max-width: 767px) {
-    
             display: flex;
             flex-direction: column-reverse;
             align-items: flex-start;
-            
-         
             margin-bottom: 64px;
-        
 }
 }
-
  
-
                  .page-header__icon {
-             @media (max-width: 1199px) {
+             @media (max-width: 768px) {
                  display: none;
              }
          }
+
+
+
+// // ДЛя планшета
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .menu-container {
+        display: flex;
+    }
+}
+
+
+// // Для пк
+@media screen and (min-width: 1200px) {
+    .page-header__contacts {
+            display: flex;
+            align-items: center;
+    
+        }
+}
+
 

@@ -6,7 +6,15 @@
     font-size: 26px;
     line-height: 1.19;
     color: var(--first-btn-color)
+
 }
+ // // ДЛя планшета
+@media screen and (min-width: 768px) and (max-width:1199px) {
+    .page-header__logo{
+        margin-right: 88px;
+    }
+
+     }
 
 .page-header__logo--another {
     transition: color 250ms var(--timing-function);
