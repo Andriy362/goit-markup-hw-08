@@ -188,15 +188,10 @@ a {
 }
 
 .page-header__positon {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
   position: relative;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__positon {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ECECEC;
-  }
 }
 
 body.menu-open, body.modal-open {

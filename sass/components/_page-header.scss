@@ -120,13 +120,14 @@
 
 
 .page-header__positon{
-    @media screen and (min-width: 768px){
+   
             border-bottom-width: 1px;
             border-bottom-style: solid;
-            border-bottom-color: #ECECEC;}
+            border-bottom-color: #ECECEC;
 
     position: relative;
 }
+
 
  body.menu-open, body.modal-open{
      overflow: hidden;
