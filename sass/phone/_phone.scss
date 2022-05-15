@@ -14,8 +14,9 @@
 // ДЛя Телефона
 @media screen and (max-width: 767px) {
    
-    .page-header__link{
-       
+    .page-header__link, 
+    .page-header__link--another{
+    
          font-weight: 500;
         font-size: 40px;
         line-height: 47px;
@@ -26,6 +27,7 @@
                 color: var(--first-btn-color);
             }
     }
+        
          
     .page-header__position--tel{
         margin-bottom: 32px;
