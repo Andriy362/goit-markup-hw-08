@@ -1,16 +1,48 @@
 /* ------------------SELECTION-PORTFOLIO-------------- */
 .page-portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // // Для пк
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+                padding-bottom: 94px;
+
+        }
 }
 
-.page-portfolio__position+.page-portfolio__position {
-    margin-left: 8px;
+.page-portfolio__position {
+    margin-right: 8px;
+    &:last-child {
+        margin-right:0;
+    }
+    // // ДЛя Телефона
+        @media screen and (max-width: 767px) {
+          margin-bottom: 15px;
+
+        &:nth-last-child(-n + 2) {
+                margin-bottom: 0px;
+            }
+        }
+
 }
+
+
+
 .page-portfolio__list {
     @extend %flex-two;
     margin-top: 0;
     margin-bottom: 50px;
+    // // ДЛя Телефона
+        @media screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+        }
+                // // ДЛя планшета
+                @media screen and (min-width: 768px) and (max-width:1199px) {
+                    margin-bottom: 30px;
+                }
 }
 
 .page-portfolio__link {

@@ -11,53 +11,73 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
+
     <!---------------- header ------------------>
-    
-<header>
+<header class="page-header__positon">
+
     <div class=" page-header container">
-        <a href="./index.html" class=" page-header__logo"> Web<span class="page-header__logo--another">Studio</span></a>
-        <ul class="page-header__list list">
-            <li class="page-header__item"> <a class="page-header__link" href="./index.html">Студия</a></li>
-            <li class="page-header__item"> <a class="page-header__link--another" href="./portfolio.html">Портфолио</a></li>
-            <li class="page-header__item"> <a class="page-header__link" href="./index.html">Контакты</a></li>
-        </ul>
+        <nav class="page-header__naw">
+            <a href="./index.html" class=" page-header__logo">Web<span
+                    class="page-header__logo--another">Studio</span></a>
+            <button type="button" class="page-header__button" aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./image/symbol-defs.svg#icon-close_40px-2-1"></use>
+                    <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu_40px-1-1"></use>
+                </svg>
+            </button>
 
 
-        <div class="page-header__navigation">
 
-            <ul class="page-header__contacts list">
-                <li>
-
-                    <a class="page-header__mailto" href="mailto:info@devstudio.com">
+            <div class="menu-container" id="menu-container" data-menu>
 
 
-                        <svg class="page-header__icon" width="16" height="12">
-                            <use href="./image/symbol-defs.svg#icon-envelope">
+                <ul class="page-header__list list">
+                    <li class="page-header__item"> <a class="page-header__link" href="./index.html">Студия</a></li>
+                    <li class="page-header__item"> <a class="page-header__link--another" href="./portfolio.html">Портфолио</a></li>
+                    <li class="page-header__item"> <a class="page-header__link" href="./index.html">Контакты</a></li>
+                </ul>
 
-                            </use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
+                <ul class="page-header__contacts list">
+                    <li class="page-header__pozition">
 
-                <li>
-                    <a class="page-header__tel " href="tel:+38 099 111 11 11">
-
-                        <svg class="page-header__icon" width="10" height="16">
-                            <use href="./image/symbol-defs.svg#icon-smartphone">
-
-                            </use>
-                        </svg>
-                        +38 099 111 11 11
-                    </a>
-                </li>
-            </ul>
-        </div>
+                        <a class="page-header__mailto" href="mailto:info@devstudio.com">
 
 
+                            <svg class="page-header__icon" width="16" height="12">
+                                <use href="./image/symbol-defs.svg#icon-envelope">
+
+                                </use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+
+                    <li class="page-header__position--tel">
+                        <a class="page-header__tel " href="tel:+38 099 111 11 11">
+
+                            <svg class="page-header__icon" width="10" height="16">
+                                <use href="./image/symbol-defs.svg#icon-smartphone">
+
+                                </use>
+                            </svg>
+                            +38 099 111 11 11
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                <ul class="page-header__social list">
+                    <li class="page-header__itemsd"><a href="" class="page-header__items">Instagram</a> </li>
+                    <li class="page-header__itemsd"><a href="" class="page-header__items">Twitter</a></li>
+                    <li class="page-header__itemsd"><a href="" class="page-header__items">Facebook</a></li>
+                    <li class="page-header__itemsd"><a href="" class="page-header__items">Linkedin</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
     </div>
 </header>
-
-
 
 
         <main>
@@ -83,7 +103,18 @@
         
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image(0).jpg" alt="Список людей" width="370">
+                                    <picture>
+                                        <source srcset="./image/portfolio/phone/tehnokryak1x-mobile.jpg 1x, ./image/ortfolio/phone/tehnokryak2x-mobile.jpg 2x"
+                                            media="(max-width: 480px)">
+                                    
+                                        <source srcset="./image/portfolio/tablet/tehnokryak1x-tablet.jpg 1x, ./image/portfolio/tablet/tehnokryak2x-tablet.jpg 2x"
+                                            media="(max-width: 768px)">
+                                    
+                                        <img class="img-size"
+                                            srcset="./image/portfolio/pc/tehnokryak1x-desktop.jpg 1x, ./image/portfolio/pc/tehnokryak2x-desktop.jpg 2x"
+                                            src="./image/portfolio/pc/tehnokryak1x-desktop.jpg" alt="Пример работы Технокряк">
+                                    
+                                    </picture>
                                     
                                     <div class="card-portfolio__frame">
                                         
@@ -108,7 +139,18 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (1).jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                    <picture>
+                                        <source srcset="./image/portfolio/phone/neworlean1x-mobile.jpg 1x, ./image/portfolio/phone/neworlean2x-mobile.jpg 2x"
+                                            media="(max-width: 480px)">
+                                    
+                                        <source srcset="./image/portfolio/tablet/neworlean1x-tablet.jpg 1x, ./image/portfolio/tablet/neworlean2x-tablet.jpg 2x"
+                                            media="(max-width: 768px)">
+                                    
+                                        <img class="img-size"
+                                            srcset="./image/portfolio/pc/neworlean1x-desktop.jpg 1x, ./image/portfolio/pc/neworlean2x-desktop.jpg 2x"
+                                            src="./image/portfolio/pc/neworlean1x-mobile.jpg" alt="Постер New Orlean vs Golden Star">
+                                    
+                                    </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -130,7 +172,17 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (2).jpg" alt="Пример работы ресторан Seafood" width="370">
+                                    <picture>
+                                    <source srcset="./image/portfolio/phone/seafood1x-mobile.jpg 1x, ./image/portfolio/phone/seafood2x-mobile.jpg 2x"
+                                        media="(max-width: 480px)">
+                                    
+                                    <source srcset="./image/portfolio/tablet/seafood1x-tablet.jpg 1x, ./image/portfolio/tablet/seafood2x-tablet.jpg 2x"
+                                        media="(max-width: 768px)">
+                                    
+                                    <img class="img-size" srcset="./image/portfolio/pc/seafood1x-desktop.jpg 1x, ./image/portfolio/pc/seafood2x-desktop.jpg 2x"
+                                        src="./image/portfolio/pc/./image/portfolio/pc/seafood1x-mobile.jpg" alt="Пример работы ресторан Seafood">
+                                    
+                                    </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -152,7 +204,15 @@
                             <a href="" class="card-portfolio__link">
 
                             <div class="card-portfolio__place">
-                                <img src="./image/image (3).jpg" alt="Наушники" width="370">
+                                <picture>
+                                    <source srcset="./image/portfolio/phone/prime1x-mobile.jpg 1x, ./image/portfolio/phone/prime2x-mobile.jpg 2x"
+                                        media="(max-width: 480px)">
+                                
+                                    <source srcset="./image/portfolio/tablet/prime1x-tablet.jpg 1x, ./image/portfolio/tablet/prime2x-tablet.jpg 2x"
+                                        media="(max-width: 768px)">
+                                
+                                    <img class="img-size" srcset="./image/portfolio/pc/prime1x-desktop.jpg 1x, ./image/portfolio/pc/prime2x-desktop.jpg 2x"
+                                        src="./image/portfolio/pc/prime1x-mobile.jpg" alt="Проект Prime">
                             
                                 <div class="card-portfolio__frame">
                             
@@ -173,7 +233,17 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (4).jpg" alt=" Boxes" width="370">
+                                <picture>
+                                    <source srcset="./image/portfolio/phone/boxes1x-mobile.jpg 1x, ./image/portfolio/phone/boxes2x-mobile.jpg 2x"
+                                        media="(max-width: 480px)">
+                                
+                                    <source srcset="./image/portfolio/tablet/boxes1x-tablet.jpg 1x, ./image/portfolio/tablet/boxes2x-tablet.jpg 2x"
+                                        media="(max-width: 768px)">
+                                
+                                    <img class="img-size" srcset="./image/portfolio/pc/boxes1x-desktop.jpg 1x, ./image/portfolio/pc/boxes2x-desktop.jpg 2x"
+                                        src="./image/portfolio/pc/boxes1x-mobile.jpg" alt="Проект Boxes">
+                                
+                                </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -195,7 +265,18 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (5).jpg" alt=" Проект Inspiration has no Borders" width="370">
+                                    <picture>
+                                        <source srcset="./image/portfolio/phone/inspiration1x-mobile.jpg 1x, ./image/portfolio/phone/inspiration2x-mobile.jpg 2x"
+                                            media="(max-width: 480px)">
+                                    
+                                        <source srcset="./image/portfolio/tablet/inspiration1x-tablet.jpg 1x, ./image/portfolio/tablet/inspiration2x-tablet.jpg 2x"
+                                            media="(max-width: 768px)">
+                                    
+                                        <img class="img-size"
+                                            srcset="./image/portfolio/pc/inspiration1x-desktop.jpg 1x, ./image/portfolio/pc/inspiration2x-desktop.jpg 2x"
+                                            src="./image/portfolio/pc/inspiration1x-mobile.jpg" alt="Проект Inspiration has no Borders">
+                                    
+                                    </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -216,7 +297,17 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (6).jpg" alt=" Проект Издание Limited Edition" width="370">
+                                    <picture>
+                                        <source srcset="./image/portfolio/phone/limited1x-mobile.jpg 1x, ./image/portfolio/phone/limited2x-mobile.jpg 2x"
+                                            media="(max-width: 480px)">
+                                    
+                                        <source srcset="./image/portfolio/tablet/limited1x-tablet.jpg 1x, ./image/portfolio/tablet/limited2x-tablet.jpg 2x"
+                                            media="(max-width: 768px)">
+                                    
+                                        <img class="img-size" srcset="./image/portfolio/pc/limited1x-desktop.jpg 1x, ./image/portfolio/pc/limited2x-desktop.jpg 2x"
+                                            src="./image/portfolio/pc/limited1x-mobile.jpg" alt="Проект Издание Limited Edition">
+                                    
+                                    </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -237,7 +328,15 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (7).jpg" alt="Проект LAB" width="370">
+                                    <picture>
+                                        <source srcset="./image/portfolio/phone/lab1x-mobile.jpg 1x, ./image/portfolio/phone/lab2x-mobile.jpg 2x" media="(max-width: 480px)">
+                                    
+                                        <source srcset="./image/portfolio/tablet/lab1x-tablet.jpg 1x, ./image/portfolio/tablet/lab2x-tablet.jpg 2x" media="(max-width: 768px)">
+                                    
+                                        <img class="img-size" srcset="./image/portfolio/pc/lab1x-desktop.jpg 1x, ./image/portfolio/pc/lab2x-desktop.jpg 2x"
+                                            src="./image/portfolio/pc/lab1x-mobile.jpg" alt="Проект LAB">
+                                    
+                                    </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -258,7 +357,17 @@
                         <li class="card-portfolio__position">
                             <a href="" class="card-portfolio__link">
                                 <div class="card-portfolio__place">
-                                    <img src="./image/image (8).jpg" alt=" Проект Growing Business" width="370">
+                                    <picture>
+                                        <source srcset="./image/portfolio/phone/growing1x-mobile.jpg 1x, ./image/portfolio/phone/growing2x-mobile.jpg 2x"
+                                            media="(max-width: 480px)">
+                                    
+                                        <source srcset="./image/portfolio/tablet/growing1x-tablet.jpg 1x, ./image/portfolio/tablet/growing2x-tablet.jpg 2x"
+                                            media="(max-width: 768px)">
+                                    
+                                        <img class="img-size" srcset="./image/portfolio/pc/growing1x-desktop.jpg 1x, ./image/portfolio/pc/growing2x-desktop.jpg 2x"
+                                            src="./image/portfolio/pc/growing1x-mobile.jpg" alt="Проект Growing Business">
+                                    
+                                    </picture>
                                 
                                     <div class="card-portfolio__frame">
                                 
@@ -290,82 +399,98 @@
             </section>
         </main>
 
- <footer  class="page-footer">
-        <div class="page-footer__position container">
-            <div >
-                <a href="./index.html" class="page-footer__logo">Web<span class="page-footer__logo--another">Studio</span></a>
-            
-                <address>
-                    <ul class="list">
-                        <li  class="page-footer__item" ><a class="page-footer__name" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li  class="page-footer__items"><a class="page-footer__mailto" href="mailto:info@example.com">info@example.com</a>
+<footer class="page-footer">
+    <div class="page-footer__position container">
+        <div class="page-footer__second">
+            <div class="qwe">
+                <div class="page-footer__two">
+                    <a href="./index.html" class="page-footer__logo">Web<span
+                            class="page-footer__logo--another">Studio</span></a>
+
+                    <address>
+                        <ul class="list">
+                            <li class="page-footer__item"><a class="page-footer__name" href="">г. Киев, пр-т Леси
+                                    Украинки, 26</a></li>
+                            <li class="page-footer__item"><a class="page-footer__mailto"
+                                    href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="page-footer__items"><a class="page-footer__tel" href="tel:+38 099 111 11 11">+38
+                                    099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+
+                </div>
+
+                <div class="footer-icon ">
+
+                    <h4 class="footer-icon__text">присоединяйтесь</h4>
+                    <ul class="footer-social  list">
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__icon">
+                                <svg class="footer-social__svg" width="20" height="20">
+                                    <use href="./image/symbol-defs.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="page-footer__items" ><a class="page-footer__tel" href="tel:+38 099 111 11 11">+38 099 111 11 11</a></li>
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__icon">
+                                <svg class="footer-social__svg" width="20" height="20">
+                                    <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__icon">
+                                <svg class="footer-social__svg" width="20" height="20">
+                                    <use href="./image/symbol-defs.svg#icon-facebook-1"></use>
+                                </svg>
+
+
+                            </a>
+                        </li>
+                        <li class="footer-social__item">
+                            <a href="" class="footer-social__icon">
+                                <svg class="footer-social__svg" width="20" height="20">
+                                    <use href="./image/symbol-defs.svg#icon-linkedin-1"></use>
+                                </svg>
+
+                            </a>
+                        </li>
+
                     </ul>
-                </address>
-            
-            </div>
-            
-            <div class="footer-icon ">
-            
-                <h4 class="footer-icon__text">присоединяйтесь</h4>
-                <ul class="footer-social  list">
-                    <li class="footer-social__item">
-                        <a href="" class="footer-social__icon">
-                            <svg class="footer-social__svg" width="20" height="20">
-                                <use href="./image/symbol-defs.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social__item">
-                        <a href="" class="footer-social__icon">
-                            <svg class="footer-social__svg" width="20" height="20">
-                                <use href="./image/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-            
-                        </a>
-                    </li>
-                    <li class="footer-social__item">
-                        <a href="" class="footer-social__icon">
-                            <svg class="footer-social__svg" width="20" height="20">
-                                <use href="./image/symbol-defs.svg#icon-facebook-1"></use>
-                            </svg>
-            
-            
-                        </a>
-                    </li>
-                    <li class="footer-social__item">
-                        <a href="" class="footer-social__icon">
-                            <svg class="footer-social__svg" width="20" height="20">
-                                <use href="./image/symbol-defs.svg#icon-linkedin-1"></use>
-                            </svg>
-            
-                        </a>
-                    </li>
-            
-                </ul>
+
+                </div>
 
             </div>
 
-            
+
+
             <form>
                 <div class="footer-form">
                     <p class="footer-form__text">Подпишитесь на рассылку</p>
-                    
+
                     <input type="email" placeholder="E-mail" class="footer-form__input">
 
                     <button type="button" class="footer-form__btn "> Подписаться
                         <svg class="footer-form__svg" width="24px" height="24px">
                             <use href="./image/symbol-defs.svg#icon-icon-send-1"></use>
-                        </svg> 
+                        </svg>
                     </button>
 
                 </div>
             </form>
-       
+
+
+
         </div>
 
-    </footer>
+
+    </div>
+
+</footer>
+
 
 
 </body>

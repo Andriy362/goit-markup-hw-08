@@ -39,7 +39,7 @@ a {
   list-style: none;
 }
 
-.card-image, .footer-form__svg, .card-portfolio {
+.card-image, .footer-form__svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,8 +94,8 @@ a {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   color: var(--first-btn-color);
 }
 
@@ -109,6 +109,10 @@ a {
   .page-header__logo {
     margin-right: 93px;
   }
+  .page-header__logo, .page-header__logo--another {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .page-header__logo--another {
@@ -117,8 +121,8 @@ a {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--header-color);
 }
@@ -1621,17 +1625,57 @@ textarea {
 
 /* ------------------SELECTION-PORTFOLIO-------------- */
 .page-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.page-portfolio__position + .page-portfolio__position {
-  margin-left: 8px;
+@media screen and (min-width: 1200px) {
+  .page-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.page-portfolio__position {
+  margin-right: 8px;
+}
+
+.page-portfolio__position:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .page-portfolio__position {
+    margin-bottom: 15px;
+  }
+  .page-portfolio__position:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 .page-portfolio__list {
   margin-top: 0;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .page-portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-portfolio__list {
+    margin-bottom: 30px;
+  }
 }
 
 .page-portfolio__link {
@@ -1659,23 +1703,38 @@ textarea {
 }
 
 /* ------------------SELECTION-PORTFOLIO-ONE--------- */
-.card-portfolio {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 767px) {
+  .card-portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.card-portfolio__position {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  width: 370px;
+@media screen and (max-width: 767px) {
+  .card-portfolio__position {
+    margin-bottom: 30px;
+  }
+  .card-portfolio__position:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.card-portfolio__position:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-portfolio__position {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
-.card-portfolio__position:not(:nth-child(-n + 6)) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .card-portfolio__position {
+    margin: 15px;
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
 
 .card-portfolio__link {
@@ -1730,19 +1789,19 @@ textarea {
 }
 
 .card-portfolio__text {
-  width: 322px;
-  height: 168px;
-  -webkit-transform: translate(24px, 63px);
-          transform: translate(24px, 63px);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  left: 50%;
-  top: 50%;
-  margin: 0;
   color: var(--second-btn-color);
+}
+
+.img-size {
+  width: 100%;
 }
 
 .card-portfolio__content {
