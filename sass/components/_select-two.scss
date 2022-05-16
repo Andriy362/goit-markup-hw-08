@@ -171,7 +171,7 @@
 
 .hero-list__name {
     margin-bottom: 10px;
-    @extend %flex-two;
+    display: flex;
     margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 700;
@@ -180,6 +180,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--first-title-color);
+    // // ДЛя Телефона
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+                display: flex;
+        }
 }
 
 .hero-list__text {

@@ -65,7 +65,11 @@
 .card-nav {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    
+    // // ДЛя планшета
+        @media screen and (max-width:1199px) {
+            margin: -15px;
+        }
 }
 
 

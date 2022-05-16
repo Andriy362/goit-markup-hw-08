@@ -43,6 +43,7 @@
 
     .selection-one{
         max-width: 768px;
+        height: 400px;
         background-image:
                 linear-gradient(to top,
                     rgba(47, 48, 58, 0.4),
@@ -69,13 +70,8 @@
 
 
 
-
-
-
-
-
  // Для пк
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
     .selection-one {
         padding-top: 200px;
             padding-bottom: 200px;
@@ -114,7 +110,7 @@
 
 
 .selection-title {
-    width: 100%;
+    width: 360px;
     margin: 0 auto 30px;
 
     font-weight: 900;
